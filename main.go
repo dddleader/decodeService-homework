@@ -58,7 +58,7 @@ func decodeBsae64(w http.ResponseWriter, r *http.Request) {
 }
 func main() {
 	http.HandleFunc("/decode", decodeBsae64)
-	err := http.ListenAndServe("localhost:9090", nil)
+	err := http.ListenAndServe("8.130.87.240:9090", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
